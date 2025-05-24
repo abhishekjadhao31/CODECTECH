@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume Checker</title>
+</head>
+<body>
+    <h2>Extracted Resume Details</h2>
+    <ul>
+        <li><strong>Name:</strong> {{ details['Name'] }}</li>
+        <li><strong>Email:</strong> {{ details['Email'] }}</li>
+        <li><strong>Phone:</strong> {{ details['Phone'] }}</li>
+        <li><strong>Skills:</strong> {{ details['Skills'] }}</li>
+    </ul>
+
+    <h2>Full Resume Text</h2>
+    <pre>{{ resume_text }}</pre>
+
+    <a href="{{ url_for('index') }}">Upload Another Resume</a>
+</body>
+</html>
